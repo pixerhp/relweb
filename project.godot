@@ -11,6 +11,10 @@ config_version=5
 [application]
 
 config/name="Relweb"
+config/description="Organizational software for connecting different ideas together as a visual web."
+config/version="1"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Relweb"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
