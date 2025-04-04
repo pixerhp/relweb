@@ -1,0 +1,9 @@
+Relweb ideas:
+	have different projects, then under that have different categories/sections (and also containers which those can go under,) any of which can go under others.
+	each category/section's scene can be freeform (place items anywhere) or chronological (arranged along a timeline axis.)
+	
+	items
+		can have an optional title text, and any number of text descriptions, images, links, dates, files attachments, etc.
+	connections
+		lines which can have an optimal arrow in either direction, and which may be wavy or spirally, etc.
+		optional text which is drawn along a connection, probably centered along the length of the line.
