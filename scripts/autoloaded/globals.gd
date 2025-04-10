@@ -1,5 +1,8 @@
 extends Node
 
+var PROGRAM_NAME: String = ProjectSettings.get_setting("application/config/name")
+var PROGRAM_VERSION: String = ProjectSettings.get_setting("application/config/version", "-1")
+
 func _ready():
 	if FM.initialize_filestructure() == FAILED:
 		push_error("Failed to initialize/ensure core filestructure.")

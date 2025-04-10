@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cpmg04wqjqywc"]
+[gd_scene load_steps=2 format=3 uid="uid://cpmg04wqjqywc"]
+
+[ext_resource type="Script" uid="uid://d0lf0w0rdr58u" path="res://scripts/titlescreen.gd" id="1_q088l"]
 
 [node name="Home" type="Control"]
 layout_mode = 3
@@ -7,6 +9,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_q088l")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
@@ -45,7 +48,8 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="TitleText" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="TSProgramName" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_font_sizes/bold_italics_font_size = 64
 theme_override_font_sizes/italics_font_size = 64
@@ -53,7 +57,7 @@ theme_override_font_sizes/mono_font_size = 64
 theme_override_font_sizes/normal_font_size = 64
 theme_override_font_sizes/bold_font_size = 64
 bbcode_enabled = true
-text = "[center]RELWEB[/center]"
+text = "[center](name)[/center]"
 fit_content = true
 
 [node name="SpacerMiddle" type="Control" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
@@ -74,11 +78,10 @@ text = "credits"
 [node name="ButtonFileLoc" type="Button" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-text = "open file
-location"
+text = "open file location"
 
 [node name="SpacerQuit" type="Control" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
-custom_minimum_size = Vector2(0, 32)
+custom_minimum_size = Vector2(0, 48)
 layout_mode = 2
 size_flags_stretch_ratio = 0.75
 
@@ -91,7 +94,8 @@ text = "quit"
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VersionText" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+[node name="TSVersionText" type="RichTextLabel" parent="VBoxContainer/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
 layout_mode = 2
 bbcode_enabled = true
 text = "version unknown"
