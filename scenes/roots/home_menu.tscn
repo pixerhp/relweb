@@ -138,3 +138,5 @@ layout_mode = 2
 [node name="SpacerBottom" type="Control" parent="VBoxContainer"]
 custom_minimum_size = Vector2(0, 32)
 layout_mode = 2
+
+[connection signal="pressed" from="VBoxContainer/HBoxContainer/VBoxContainer/ButtonFileLoc" to="." method="_on_button_file_loc_pressed"]
