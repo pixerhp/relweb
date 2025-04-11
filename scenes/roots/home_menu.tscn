@@ -1,15 +1,15 @@
 [gd_scene load_steps=2 format=3 uid="uid://cpmg04wqjqywc"]
 
-[ext_resource type="Script" uid="uid://d0lf0w0rdr58u" path="res://scripts/titlescreen.gd" id="1_q088l"]
+[ext_resource type="Script" uid="uid://d0lf0w0rdr58u" path="res://scripts/titlescreen.gd" id="1_d0tqd"]
 
-[node name="Home" type="Control"]
+[node name="HomeMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_q088l")
+script = ExtResource("1_d0tqd")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
